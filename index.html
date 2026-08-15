@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Coaching Centre | Physics by Santheep (PhD IIT Researcher)</title>
+    <meta name="description"
+        content="Rigorous physics coaching for CSIR-NET, GATE, IIT-JAM, JEST, NEET, JEE, CBSE, GCSE, IGCSE & A-Level by Santheep, PhD Researcher in Nanotechnology, IIT.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=15">
+</head>
+
+<body>
+
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="brand-logo">
+                <img src="logo.png" alt="Physics Coaching Centre Logo" class="logo-img"
+                    style="height: 50px !important; width: auto !important; max-height: 50px !important; display: block !important;"
+                    height="50">
+                <div class="brand-text">
+                    <span class="brand-title">Physics by Santheep</span>
+                    <span class="brand-subtitle">Knowledge, Guidance and Success</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#schedule" class="nav-link">Class &amp; Time</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-gold btn-sm">Enroll Now</a>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="home">
+            <div class="hero-bg-overlay"></div>
+            <canvas id="orbitCanvas" class="hero-canvas"></canvas>
+            <div class="container hero-split-container">
+                <div class="hero-left-column">
+                    <div class="hero-badge">
+                        <img src="logo.png" alt="Official Shield Emblem" class="hero-badge-logo"
+                            style="height: 28px !important; width: 22px !important; max-height: 28px !important; display: inline-block !important;"
+                            width="22" height="28">
+                        <span>Knowledge, Guidance &amp; Success | PhD IIT Researcher</span>
+                    </div>
+                    <h1 class="hero-title">Physics Coaching Centre <span class="gold-accent">/</span> Physics by
+                        Santheep</h1>
+                    <div class="hero-impact-quote">
+                        <i class="fa-solid fa-quote-left hero-quote-icon"></i>
+                        <span>MEMORIZING IS THE ENEMY FOR STUDENTS, DON’T MEMORIZE – JUST UNDERSTAND IT.</span>
+                    </div>
+                    <p class="hero-subheadline">
+                        We are INDIA’s fastest growing physics coaching brand from scratch, with 5,000+ learners every
+                        year on online platforms, leading students to solve international research institute and
+                        university questions.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#courses" class="btn btn-gold btn-lg">
+                            <span>Explore Courses</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-right-column">
+                    <div class="hero-pillars-card">
+                        <div class="pillars-card-header">
+                            <i class="fa-solid fa-atom gold-accent"></i>
+                            <h3>Core Mentorship Pillars</h3>
+                        </div>
+                        <ul class="hero-pillars-list">
+                            <li>
+                                <div class="pillar-number">1</div>
+                                <div class="pillar-text">
+                                    <strong>10,000+ Original Problems:</strong> We designed 10,000+ original questions
+                                    and led students to solve them with AI.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pillar-number">2</div>
+                                <div class="pillar-text">
+                                    <strong>National Target Exams:</strong> CSIR-NET/JRF, GATE, TIFR, JEST, BARC,
+                                    IIT-JAM, GRE, UPSC-PHYSICS, and state/central govt physics exams.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pillar-number">3</div>
+                                <div class="pillar-text">
+                                    <strong>International Benchmarks:</strong> MIT, CIT, CMU, Berlin, Switzerland, Royal
+                                    Institute, Uppsala, Tokyo, China &amp; Canada.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pillar-number">4</div>
+                                <div class="pillar-text">
+                                    <strong>School &amp; Entrance Track:</strong> NEET, JEE, CBSE, GCSE, IGCSE, A-Level,
+                                    K-12, USA &amp; UK Curriculum.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pillar-number">5</div>
+                                <div class="pillar-text">
+                                    <strong>Concept-First Guarantee:</strong> <em>“We won’t let students memorize.”</em>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pillar-number">6</div>
+                                <div class="pillar-text">
+                                    <strong>Authoritative Literature:</strong> We prefer original author books over
+                                    random online notes or YouTube notes.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Academic Credentials &amp; Philosophy</span>
+                    <h2 class="section-title">About the Instructor</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-media-column">
+                        <div class="instructor-image-wrapper">
+                            <img src="instructor.jpg" alt="Santheep - PhD Nanotechnology Researcher IIT"
+                                class="instructor-img" loading="lazy">
+                            <div class="badge-overlay">
+                                <i class="fa-solid fa-microscope"></i>
+                                <span>IIT Doctoral Researcher</span>
+                            </div>
+                        </div>
+                        <div class="stats-counter-card">
+                            <div class="stat-box">
+                                <span class="stat-number">9.47</span>
+                                <span class="stat-label">M.Sc. CGPA (Gold Medal)</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-box">
+                                <span class="stat-number">9.137</span>
+                                <span class="stat-label">B.Sc. CGPA (Gold Medal)</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-box">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years Core Mentorship</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text-column">
+                        <h3 class="instructor-name">Santheep <span class="degree-title">M.Sc. (Double Gold Medalist),
+                                PhD Candidate (IIT)</span></h3>
+                        <p class="instructor-bio-lead">
+                            A dedicated physics educator and doctoral researcher in Nanotechnology at the Indian
+                            Institute of Technology (IIT), bringing authentic research-grade clarity and high-stakes
+                            exam mastery to every session.
+                        </p>
+
+                        <div class="academic-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-icon"><i class="fa-solid fa-building-columns"></i></div>
+                                <div class="timeline-content">
+                                    <h4>Ongoing Doctoral Research (PhD in Nanotechnology)</h4>
+                                    <p>Indian Institute of Technology (IIT) — Investigating quantum nano-structures and
+                                        advanced solid-state physics applications.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon"><i class="fa-solid fa-medal"></i></div>
+                                <div class="timeline-content">
+                                    <h4>M.Sc. Physics — Gold Medalist (CGPA 9.47 / 10)</h4>
+                                    <p>Annamalai University — Secured First Rank with University Gold Medal in
+                                        Theoretical &amp; Applied Physics.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon"><i class="fa-solid fa-medal"></i></div>
+                                <div class="timeline-content">
+                                    <h4>B.Sc. Physics — Gold Medalist (CGPA 9.137 / 10)</h4>
+                                    <p>Thiruvalluvar University — Secured First Rank with University Gold Medal across
+                                        foundational physics.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                                <div class="timeline-content">
+                                    <h4>GR Institute Learning Centre — Core Physics Mentor</h4>
+                                    <p>Trained 5,000+ students annually over 3+ years. Authored 10,000+ original physics
+                                        problems and solved 20,000+ previous-year national &amp; international exam
+                                        questions.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <blockquote class="pull-quote">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>"5,000+ students mentored annually through authentic concept building, original problem
+                                synthesis, and deep mathematical rigor."</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-section" id="courses">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Coaching Tracks</span>
+                    <h2 class="section-title">Comprehensive Physics Programs</h2>
+                    <p class="section-description">Tailored curriculum design bridging competitive research examinations
+                        and foundational school entrance benchmarks.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="card-header-badge">
+                            <i class="fa-solid fa-atom"></i> Course 1
+                        </div>
+                        <h3 class="course-title">Competitive &amp; Research Exams Track</h3>
+                        <p class="course-subtitle">CSIR-NET, GATE, TIFR, JEST, BARC, IIT-JAM, GRE, UPSC-PHYSICS, and all
+                            state &amp; central government physics-based exams.</p>
+
+                        <div class="exam-tags-wrapper">
+                            <span class="exam-tag">CSIR-NET</span>
+                            <span class="exam-tag">GATE</span>
+                            <span class="exam-tag">TIFR</span>
+                            <span class="exam-tag">JEST</span>
+                            <span class="exam-tag">BARC</span>
+                            <span class="exam-tag">IIT-JAM</span>
+                            <span class="exam-tag">GRE Physics</span>
+                            <span class="exam-tag">UPSC-Physics</span>
+                        </div>
+
+                        <ul class="feature-bullets">
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>100+ Free Original Author-Book PDFs:</strong> Curated repository of classic
+                                    international standard textbooks and problem collections.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Roller Coaster Lecture Style:</strong> Highly engaging, high-energy lectures
+                                    designed like an immersive intellectual roller coaster ride.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Interactive Student Voice:</strong> We let students speak more — we actively
+                                    listen and address each student's physical intuition.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>AI-Free International Problems:</strong> We train students to solve
+                                    international University and research institute questions without the use of AI.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Independent PYQ Mastery:</strong> Students will automatically solve
+                                    previous-year national exam questions on their own without any help.
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="course-card-footer">
+                            <a href="#schedule" class="btn btn-gold btn-full">
+                                <span>View Evening Batch Schedule</span>
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="card-header-badge secondary">
+                            <i class="fa-solid fa-microscope"></i> Course 2
+                        </div>
+                        <h3 class="course-title">School &amp; Entrance Exams Track</h3>
+                        <p class="course-subtitle">NEET, JEE, CBSE, GCSE, IGCSE, A-level, K-12, USA &amp; UK curriculum.
+                        </p>
+
+                        <div class="exam-tags-wrapper">
+                            <span class="exam-tag">NEET</span>
+                            <span class="exam-tag">JEE Main &amp; Adv</span>
+                            <span class="exam-tag">CBSE</span>
+                            <span class="exam-tag">GCSE</span>
+                            <span class="exam-tag">IGCSE</span>
+                            <span class="exam-tag">A-Level</span>
+                            <span class="exam-tag">K-12 (USA/UK)</span>
+                        </div>
+
+                        <ul class="feature-bullets">
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Beyond Rote Schooling:</strong> We don't repeat the traditional mistakes
+                                    made in standard school teaching.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Fundamental Core Understanding:</strong> We give fundamental core
+                                    understanding of concepts with practical real-time examples.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Textbook vs Author Comparison:</strong> We train students to compare school
+                                    books with original reference author books to grasp the root of the subject easily
+                                    instead of memorizing it.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Round-Table Student-Lecturer Debates:</strong> We conduct round-table
+                                    conference interactions between students and lecturer, encouraging students to argue
+                                    their points to prove their physics logic.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>International Entrance Practice:</strong> We give students international UG
+                                    entrance questions for advanced problem familiarity.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Self-Doubt Free PYQ Execution:</strong> Students will easily crack PYQs
+                                    without any self-doubt.
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="course-card-footer">
+                            <a href="#schedule" class="btn btn-teal btn-full">
+                                <span>View Morning Batch Schedule</span>
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule-section" id="schedule">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Batch Timings &amp; Investment</span>
+                    <h2 class="section-title">Class Schedule &amp; Fee Structure</h2>
+                    <p class="section-description">Transparent, accessible fee structure across all batches —
+                        ₹1,000/month flat fee for high-caliber mentorship.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="tab-controls">
+                    <button class="tab-btn active" data-tab="tab-course1">
+                        <i class="fa-solid fa-moon"></i> Competitive &amp; Research (Evening Batches)
+                    </button>
+                    <button class="tab-btn" data-tab="tab-course2">
+                        <i class="fa-solid fa-sun"></i> School &amp; Entrance (Morning Batches)
+                    </button>
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <div class="tab-pane active" id="tab-course1">
+                        <div class="table-card">
+                            <div class="table-header-bar">
+                                <div>
+                                    <h4>Course 1: Competitive &amp; Research Track Schedule</h4>
+                                    <span class="badge-timing"><i class="fa-regular fa-clock"></i> Evening Batches: 6:00
+                                        PM – 9:30 PM IST</span>
+                                </div>
+                                <div class="fee-badge">
+                                    <span>₹1,000 / month</span>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="schedule-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Program Option</th>
+                                            <th>Target Audience &amp; Scope</th>
+                                            <th>Timing</th>
+                                            <th>Monthly Fee</th>
+                                            <th>Enrollment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="program-title">1-Year Comprehensive Batch</div>
+                                                <span class="sub-badge">Full Syllabus + Research Problem Solving</span>
+                                            </td>
+                                            <td>CSIR-NET, GATE, TIFR, JEST, BARC &amp; UPSC Physics aspirants</td>
+                                            <td>6:00 PM – 8:30 PM (Mon - Fri)</td>
+                                            <td><strong class="fee-text">₹1,000 / mo</strong></td>
+                                            <td><a href="#contact" class="btn btn-gold btn-xs">Apply Now</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="program-title">6-Month Intensive Batch</div>
+                                                <span class="sub-badge">Targeted PYQs + Author Book Drills</span>
+                                            </td>
+                                            <td>Upcoming CSIR-NET / GATE immediate attempt takers</td>
+                                            <td>6:00 PM – 9:30 PM (Mon - Sat)</td>
+                                            <td><strong class="fee-text">₹1,000 / mo</strong></td>
+                                            <td><a href="#contact" class="btn btn-gold btn-xs">Apply Now</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="program-title">Fast-Track Crash Course</div>
+                                                <span class="sub-badge">High-Yield Problem Solving</span>
+                                            </td>
+                                            <td>Pre-exam 60-day rapid revision &amp; mock test analysis</td>
+                                            <td>6:00 PM – 9:30 PM (Daily)</td>
+                                            <td><strong class="fee-text">₹1,000 / mo</strong></td>
+                                            <td><a href="#contact" class="btn btn-gold btn-xs">Apply Now</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab-course2">
+                        <div class="table-card">
+                            <div class="table-header-bar secondary">
+                                <div>
+                                    <h4>Course 2: School &amp; Entrance Track Schedule</h4>
+                                    <span class="badge-timing"><i class="fa-regular fa-clock"></i> Morning Batches: 6:00
+                                        AM – 8:00 AM IST</span>
+                                </div>
+                                <div class="fee-badge secondary">
+                                    <span>₹1,000 / month</span>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="schedule-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Program Option</th>
+                                            <th>Target Audience &amp; Scope</th>
+                                            <th>Timing</th>
+                                            <th>Monthly Fee</th>
+                                            <th>Enrollment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="program-title">1-Year Foundation &amp; Target Batch</div>
+                                                <span class="sub-badge">NEET / JEE / CBSE &amp; International
+                                                    Curricula</span>
+                                            </td>
+                                            <td>Grade 11 &amp; 12, GCSE, IGCSE, A-Level &amp; K-12 students</td>
+                                            <td>6:00 AM – 8:00 AM (Mon - Fri)</td>
+                                            <td><strong class="fee-text">₹1,000 / mo</strong></td>
+                                            <td><a href="#contact" class="btn btn-teal btn-xs">Apply Now</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="program-title">6-Month Board &amp; Entrance Intensive</div>
+                                                <span class="sub-badge">Concept Mastery + Reference Comparisons</span>
+                                            </td>
+                                            <td>Targeted 12th board + NEET / JEE Main preparation</td>
+                                            <td>6:00 AM – 8:00 AM (Mon - Sat)</td>
+                                            <td><strong class="fee-text">₹1,000 / mo</strong></td>
+                                            <td><a href="#contact" class="btn btn-teal btn-xs">Apply Now</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="program-title">Entrance Special Crash Course</div>
+                                                <span class="sub-badge">PYQs &amp; International Question Drills</span>
+                                            </td>
+                                            <td>NEET / JEE final month revision &amp; time-bound tests</td>
+                                            <td>6:00 AM – 8:00 AM (Daily)</td>
+                                            <td><strong class="fee-text">₹1,000 / mo</strong></td>
+                                            <td><a href="#contact" class="btn btn-teal btn-xs">Apply Now</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Learning Centre Moments</span>
+                    <h2 class="section-title">Research &amp; Classroom Gallery</h2>
+                    <p class="section-description">Moments from nanotech laboratory research, round-table student
+                        discussions, seminars, and gold medal honors.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="gallery-masonry" id="galleryGrid">
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="hero_bg.jpg" alt="Nanotechnology Optics &amp; Laser Lab" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Nanotechnology Research Lab</h4>
+                                <p>Optical microscope &amp; laser quantum optics setup</p>
+                                <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="gallery_seminar.jpg" alt="Educational Physics Lecture Seminar" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Interactive Physics Seminars</h4>
+                                <p>First-principles quantum derivations in auditorium sessions</p>
+                                <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="instructor.jpg" alt="Santheep at Nanotechnology Microscope" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Nanostructure Characterization</h4>
+                                <p>IIT doctoral research laboratory sample inspection</p>
+                                <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="gallery_notes.jpg" alt="Original Author Books &amp; Physics Derivations"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Original Author Reference Books</h4>
+                                <p>100+ PDF textbook collections &amp; handwritten problem derivations</p>
+                                <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="gallery_debate.jpg" alt="Round-Table Student Debate Session" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Round-Table Student Debates</h4>
+                                <p>Active concept discussion between lecturer and students</p>
+                                <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="gallery_award.jpg" alt="University Physics Gold Medal Award" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Academic Excellence Honors</h4>
+                                <p>University Gold Medal recognition in M.Sc. &amp; B.Sc. Physics</p>
+                                <span class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+            <div class="lightbox-content">
+                <img src="" id="lightboxImg" alt="Enlarged view">
+                <div class="lightbox-caption" id="lightboxCaption"></div>
+            </div>
+        </div>
+        <section class="testimonials-section" id="testimonials">
+
+
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Student Success</span>
+                    <h2 class="section-title">What Aspirants Say</h2>
+                    <p class="section-description">Real outcomes from students mentored for competitive research exams
+                        and national entrance benchmarks.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="quote-header">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Santheep Sir's approach to CSIR-NET physics is unmatched. Solving original research
+                            problems without relying on AI gave me absolute confidence in quantum mechanics and
+                            electrodynamics."
+                        </p>
+                        <div class="student-info">
+                            <div class="student-avatar">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <div>
+                                <h4 class="student-name">Arjun R.</h4>
+                                <span class="student-badge">CSIR-NET Physics — AIR 42</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-header">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "I scored 175/180 in NEET Physics! Santheep Sir strictly taught concept-first physics
+                            instead of rote memory tricks. Comparing standard textbooks with original authors made all
+                            the difference."
+                        </p>
+                        <div class="student-info">
+                            <div class="student-avatar">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <h4 class="student-name">Priya S.</h4>
+                                <span class="student-badge">NEET Physics Score: 175/180</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-header">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "The evening batches for GATE were super focused. Round-table debates on previous year
+                            questions and receiving 100+ original author book PDFs helped me clear GATE with AIR 18."
+                        </p>
+                        <div class="student-info">
+                            <div class="student-avatar">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <div>
+                                <h4 class="student-name">Karthik V.</h4>
+                                <span class="student-badge">GATE Physics — AIR 18</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Contact &amp; Admissions</h2>
+                    <p class="section-description">Reach out directly for batch availability, personalized guidance, or
+                        seminar inquiries.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-hub-wrapper">
+                    <div class="contact-header-banner">
+                        <div class="banner-brand-badge">
+                            <img src="logo.png" alt="Emblem" style="height: 32px !important; width: auto !important;"
+                                height="32">
+                            <span>Official Admissions Portal</span>
+                        </div>
+                        <h3>Physics Coaching Centre / Physics by Santheep</h3>
+                        <div class="contact-quick-pills">
+                            <a href="tel:+918248932207" class="quick-pill">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+91 8248932207</span>
+                            </a>
+                            <a href="mailto:physicscoachingcentre99@gmail.com" class="quick-pill">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>physicscoachingcentre99@gmail.com</span>
+                            </a>
+                            <div class="quick-pill location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>GR Institute &amp; IIT Campus</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cards-grid">
+                        <div class="hub-card channels-card">
+                            <div class="hub-card-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                            <h4>Official Socials &amp; Direct Handles</h4>
+                            <p>Connect directly with Santheep Sir across official platform handles &amp; social
+                                networks.</p>
+                            <div class="hub-buttons-group">
+                                <a href="https://wa.me/918248932207" target="_blank" rel="noopener"
+                                    class="hub-btn whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <span>WhatsApp Direct</span>
+                                </a>
+                                <a href="https://t.me/Physicscoachingcentre" target="_blank" rel="noopener"
+                                    class="hub-btn telegram">
+                                    <i class="fa-brands fa-telegram"></i>
+                                    <span>Telegram Channel</span>
+                                </a>
+                                <a href="https://www.youtube.com/@Physicscoachingcentre-q8d" target="_blank"
+                                    rel="noopener" class="hub-btn youtube">
+                                    <i class="fa-brands fa-youtube"></i>
+                                    <span>YouTube Channel</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/santheep-raj-3093a73a6?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android"
+                                    target="_blank" rel="noopener" class="hub-btn linkedin">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <span>LinkedIn Profile</span>
+                                </a>
+                                <a href="https://www.instagram.com/physicscoachingcentre?utm_source=qr&amp;igsh=MTJnbG5jZDRybzJrNA=="
+                                    target="_blank" rel="noopener" class="hub-btn instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <span>Instagram Profile</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hub-card platforms-card">
+                            <div class="hub-card-icon teal-icon"><i class="fa-solid fa-video"></i></div>
+                            <h4>Live HD Interactive Classes</h4>
+                            <p>Daily live interactive batches conducted with zero-latency screen sharing and real-time
+                                student debate.</p>
+                            <div class="platform-chip-list">
+                                <div class="platform-chip zoom">
+                                    <i class="fa-solid fa-video"></i>
+                                    <div>
+                                        <strong>Zoom HD Live</strong>
+                                        <span>Evening Batches (6:00 - 8:30 PM)</span>
+                                    </div>
+                                </div>
+                                <div class="platform-chip meet">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <div>
+                                        <strong>Google Meet Classroom</strong>
+                                        <span>Morning Batches (6:00 - 8:00 AM)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hub-card form-card">
+                            <div class="hub-card-icon gold-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+                            <h4>Enrollment Application</h4>
+                            <p>Complete the official Tally enrollment form for seat reservation, course track selection
+                                &amp; 100+ PDF author books access.</p>
+                            <button class="btn btn-gold btn-lg btn-full pulse-form-btn" data-tally-open="gDzBeK"
+                                data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Open Tally Inquiry Form</span>
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </button>
+                            <span class="hub-secure-tag"><i class="fa-solid fa-shield-halved"></i> Direct &amp; Verified
+                                Tally Application</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-footer-note">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>All admission inquiries are reviewed directly by Santheep Sir within 24 hours.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Physics Coaching Centre Official Crest Logo" class="footer-logo-img"
+                            style="height: 40px !important; width: 31px !important; max-height: 40px !important; display: block !important;"
+                            width="31" height="40">
+                        <span>Physics by Santheep</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Physics Coaching Centre — PhD Researcher in Nanotechnology at IIT. Double University Gold
+                        Medalist mentoring serious students for high-stakes competitive and entrance exams.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/918248932207" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://t.me/Physicscoachingcentre" target="_blank" rel="noopener"
+                            aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.youtube.com/@Physicscoachingcentre-q8d" target="_blank" rel="noopener"
+                            aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/physicscoachingcentre?utm_source=qr&amp;igsh=MTJnbG5jZDRybzJrNA=="
+                            target="_blank" rel="noopener" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/santheep-raj-3093a73a6?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android"
+                            target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:physicscoachingcentre99@gmail.com" aria-label="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Instructor</a></li>
+                        <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> Coaching Tracks</a></li>
+                        <li><a href="#schedule"><i class="fa-solid fa-chevron-right"></i> Class &amp; Time</a></li>
+                        <li><a href="#gallery"><i class="fa-solid fa-chevron-right"></i> Research Gallery</a></li>
+                        <li><a href="#testimonials"><i class="fa-solid fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Admissions &amp; Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Target Examinations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> CSIR-NET &amp; GATE Physics</a>
+                        </li>
+                        <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> IIT-JAM, JEST &amp; TIFR</a>
+                        </li>
+                        <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> NEET &amp; JEE Physics</a></li>
+                        <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> CBSE, GCSE &amp; IGCSE</a></li>
+                        <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> A-Level &amp; K-12 (USA/UK)</a>
+                        </li>
+                        <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> UPSC Physics Optional</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact &amp; Platforms</h4>
+                    <div class="footer-contact-info">
+                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:physicscoachingcentre99@gmail.com"
+                                style="color: inherit; text-decoration: none;">physicscoachingcentre99@gmail.com</a></p>
+                        <p><i class="fa-solid fa-phone"></i> <a href="tel:+918248932207"
+                                style="color: inherit; text-decoration: none;">+91 82489 32207</a></p>
+                        <p><i class="fa-solid fa-location-dot"></i> GR Institute Learning Centre &amp; IIT Campus</p>
+                    </div>
+                    <div class="footer-platforms-list">
+                        <span class="footer-platform-chip"><i class="fa-solid fa-video"></i> Zoom</span>
+                        <span class="footer-platform-chip"><i class="fa-solid fa-headset"></i> Google Meet</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Physics Coaching Centre / Physics by Santheep. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
